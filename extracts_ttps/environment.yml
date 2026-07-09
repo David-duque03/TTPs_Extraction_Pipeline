@@ -1,0 +1,12 @@
+name: extracts_ttps
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - torch
+      - transformers
+      - nltk

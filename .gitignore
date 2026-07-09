@@ -1,0 +1,35 @@
+# Raw and intermediate data (large binaries, regenerable by running the pipeline)
+Conversion_TXT/ReportsA/
+Conversion_TXT/ReportsB/
+Conversion_TXT/ReportsC/
+Conversion_TXT/ReportsCTI_HAL/
+Conversion_TXT/pdf_processed/
+Conversion_TXT/txt_out_A/
+Conversion_TXT/txt_out_B/
+Conversion_TXT/txt_out_C/
+Conversion_TXT/txt_out_CTI_HAL/
+Conversion_TXT/salida.log
+
+Clean_duplicated/PDF_dedup/
+Clean_duplicated/TXT_dedup/
+
+extracts_ttps/dataset_completo.json
+extracts_ttps/dataset_completo_limpio.json
+extracts_ttps/output_dataset_limpio_v2.csv
+extracts_ttps/label_dict.pkl
+extracts_ttps/ttp_id_name.pkl
+
+dataset_analysis/plots_iocs_enrique/
+dataset_analysis/plots_new_iocs_filtered/
+dataset_analysis/output_dataset_limpio_v2.csv
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

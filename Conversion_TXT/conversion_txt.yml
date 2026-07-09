@@ -1,0 +1,11 @@
+name: conversion_txt
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - pymupdf
+      - pillow
+      - openai
