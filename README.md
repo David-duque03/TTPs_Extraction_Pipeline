@@ -62,9 +62,9 @@ pipeline_ttp_extraction/
 │   └── README.md
 ├── dataset_analysis/       # Statistical analysis (plots, summaries)
 │   ├── output_dataset_limpio_v2.csv   # Input CSV (generate manually, see README)
-│   ├── plots_iocs_enrique/            # Output (created at runtime)
+│   ├── plots_iocs/            # Output (created at runtime)
 │   ├── plots_new_iocs_filtered/       # Output (created at runtime)
-│   ├── analisis_ttp_dataset_vEnrique.py
+│   ├── analisis_ttp_dataset.py
 │   ├── clean_dataset.py               # Convenience copy of extracts_ttps/clean_dataset.py
 │   ├── environment.yml
 │   └── README.md
@@ -164,7 +164,7 @@ example.
 5. Generate `output_dataset_limpio_v2.csv` from
    `extracts_ttps/dataset_completo_limpio.json` and place it in
    `extracts_ttps/`, then run
-   `dataset_analysis/analisis_ttp_dataset_vEnrique.py` (statistical
+   `dataset_analysis/analisis_ttp_dataset.py` (statistical
    analysis).
 
 Each step's detailed instructions, inputs and outputs are documented in

@@ -1,5 +1,5 @@
 """
-analisis_ttp_dataset_vEnrique.py - Statistical analysis phase.
+analisis_ttp_dataset.py - Statistical analysis phase.
 
 Reads the cleaned CSV version of the TTP/IoC dataset (produced from
 extracts_ttps/dataset_completo_limpio.json) and generates the descriptive
@@ -45,7 +45,7 @@ EXTRACTS_DIR = PROJECT_ROOT / "extracts_ttps"
 csv_path = EXTRACTS_DIR / "output_dataset_limpio_v2.csv"
 
 # Output folders for plots and CSV summaries, kept inside this folder.
-PLOTS_DIR = DATASET_ANALYSIS_DIR / "plots_iocs_enrique"
+PLOTS_DIR = DATASET_ANALYSIS_DIR / "plots_iocs"
 PLOTS_FILTERED_DIR = DATASET_ANALYSIS_DIR / "plots_new_iocs_filtered"
 PLOTS_DIR.mkdir(parents=True, exist_ok=True)
 PLOTS_FILTERED_DIR.mkdir(parents=True, exist_ok=True)

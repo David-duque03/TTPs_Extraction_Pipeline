@@ -10,10 +10,10 @@ figures.
 
 ```
 dataset_analysis/
-├── analisis_ttp_dataset_vEnrique.py   # Main analysis script (plots + summaries)
+├── analisis_ttp_dataset.py   # Main analysis script (plots + summaries)
 ├── clean_dataset.py                    # Convenience copy of extracts_ttps/clean_dataset.py
 ├── environment.yml
-├── plots_iocs_enrique/                 # Output plots (created automatically)
+├── plots_iocs/                 # Output plots (created automatically)
 └── plots_new_iocs_filtered/            # Output plots, filtered variant (created automatically)
 ```
 
@@ -23,7 +23,7 @@ computer/drive and still work, as long as the folder layout is preserved.
 
 ## Input
 
-`analisis_ttp_dataset_vEnrique.py` reads a CSV file from:
+`analisis_ttp_dataset.py` reads a CSV file from:
 
 ```
 extracts_ttps/output_dataset_limpio_v2.csv
@@ -48,7 +48,7 @@ df.to_csv("extracts_ttps/output_dataset_limpio_v2.csv", index=False)
 
 The exact normalization/flattening logic (how the nested `ttps` and
 `metadata.iocs` fields are expanded into columns) depends on what
-`analisis_ttp_dataset_vEnrique.py` expects to find in the CSV — review the
+`analisis_ttp_dataset.py` expects to find in the CSV — review the
 `parse_complex_data` helper and the column names used throughout the script
 (e.g. `ttps_por_doc`, `iocs_por_doc`, `coinc_df`, `ttp_label`) before writing
 your conversion step, and adapt it if your CSV columns differ.
@@ -75,13 +75,13 @@ From this folder, after the CSV described above has been placed at
 `extracts_ttps/output_dataset_limpio_v2.csv`:
 
 ```bash
-python analisis_ttp_dataset_vEnrique.py
+python analisis_ttp_dataset.py
 ```
 
 This prints descriptive statistics to the console and saves plots into:
 
 ```
-plots_iocs_enrique/
+plots_ioc/
 plots_new_iocs_filtered/
 ```
 
@@ -101,5 +101,5 @@ python clean_dataset.py
 ## Configuration
 
 If you need to point the analysis script at a different CSV file or output
-folders, edit the constants at the top of `analisis_ttp_dataset_vEnrique.py`
+folders, edit the constants at the top of `analisis_ttp_dataset.py`
 (`csv_path`, `PLOTS_DIR`, `PLOTS_FILTERED_DIR`).
